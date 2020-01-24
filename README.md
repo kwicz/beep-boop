@@ -1,6 +1,6 @@
 # _Beep Boop_
 
-#### _Creates a new string of words, based on user input, Jan 2020_
+#### _Creates a new string of numbers or words based on user input, Jan 2020_
 
 #### By _**K. Wicz**_
 

@@ -57,7 +57,7 @@ $(document).ready(function(){
 		else {
 			var output = checkThree(input);
 			$(".result").text(output);
-			console.log("output: " + output);
+			$("input").val("");
 		}
 	});
 });

@@ -15,7 +15,7 @@ function checkThree(number){
 // Check user input for "2"
 function checkTwo(number){
 	if (number.includes(2)){
-		output = "boop";
+		output = "BOOP";
 		return output;
 	}
 	else {
@@ -27,7 +27,7 @@ function checkTwo(number){
 // Check user input for "1"
 function checkOne(number){
 	if (number.includes(1)){
-		output = "beep";
+		output = "BEEP";
 		return output;
 	}
 	else {
@@ -45,22 +45,33 @@ function extract(number){
 	return range;
 };
 
-// Like a polaroid picture
-function shake() {
-        var div = $("#shake");
-        var interval = 100;
-        var distance = 10;
-        var times = 4;
+// Animate Hal
+function shakeIt(likeAPolaroidPicture) {
+  var div = $("#shake");
+  var interval = 100;
+  var distance = 10;
+  var times = likeAPolaroidPicture;
 
-        $(div).css('position', 'relative');
+  $(div).css('position', 'relative');
 
-        for (var iter = 0; iter < (times + 1) ; iter++) {
-            $(div).animate({
-                left: ((iter % 2 == 0 ? distance : distance * -1))
-            }, interval);
-        }                                                                                                          
-        $(div).animate({ left: 0 }, interval);
-    }
+  // Shake no, if Hal is afraid he can't do that
+  if (likeAPolaroidPicture === 4) {
+  	for (var iter = 0; iter < (times + 1) ; iter++) {
+      $(div).animate({
+          left: ((iter % 2 == 0 ? distance : distance * -1))
+      }, interval);
+  }                                                                                                          
+  $(div).animate({ left: 0 }, interval);
+  // Shake yes to get the beeps and boops out
+  } else {
+    for (var iter = 0; iter < (times + 1) ; iter++) {
+        $(div).animate({
+            top: ((iter % 2 == 0 ? distance : distance * -1))
+        }, interval);
+    }                                                                                                          
+    $(div).animate({ top: 0 }, interval);
+  }
+}
 
 // UI at the bottom
 $(document).ready(function(){
@@ -70,18 +81,16 @@ $(document).ready(function(){
 		var name = $("#inputName").val();
 		if (!input){
 			return alert("Please submit a number.");
-		}
-		else {
+		} else {
 			var output = checkThree(input);
-			var dave = output.includes("Dave");
-			if (dave) {
-				if (dave && name) {
-					output = output.replace("Dave", name);
-				}
-				shake();
-			}
+			if (output.includes("Dave")) {
+				output = output.replace("Dave", name);
+				shakeIt(4);
+			} else if (output.includes("B")) {
+				shakeIt(1);
+			};
 			$(".result").text(output);
 			$("input").val("");
-		}
+		};
 	});
 });

@@ -7,7 +7,7 @@
 
 ## Preview
 
-[![Landing Page Preview](url("landing-page.png"))]
+[![Landing Page Preview](landing-page.png)]
 
 **[View Live Preview](https://kwicz.github.io/beep-boop/)**
 

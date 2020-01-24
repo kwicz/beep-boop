@@ -1,5 +1,12 @@
 // Business at the top
-
+function extract(number){
+	var range = [];
+	for (var i = 0; i < number; i++){
+		range.push(i);
+	}
+	console.log("range: " + range);
+	return range;
+};
 
 
 // UI at the bottom
@@ -10,7 +17,8 @@ $(document).ready(function(){
 			return alert("Please submit a number.");
 		}
 		else {
-			console.log("input: " + input);
+			var output = extract(input);
+			console.log("output: " + output);
 		}
 	});
 });

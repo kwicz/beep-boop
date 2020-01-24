@@ -42,20 +42,44 @@ function extract(number){
 	for (var i = 0; i < number; i++){
 		range.push(i);
 	}
-	console.log("range: " + range);
 	return range;
 };
+
+// Like a polaroid picture
+function shake() {
+        var div = $("#shake");
+        var interval = 100;
+        var distance = 10;
+        var times = 4;
+
+        $(div).css('position', 'relative');
+
+        for (var iter = 0; iter < (times + 1) ; iter++) {
+            $(div).animate({
+                left: ((iter % 2 == 0 ? distance : distance * -1))
+            }, interval);
+        }                                                                                                          
+        $(div).animate({ left: 0 }, interval);
+    }
 
 // UI at the bottom
 $(document).ready(function(){
 	$("form").submit(function(event){
 		event.preventDefault();
-		var input = $("input").val();
+		var input = $("#inputNumber").val();
+		var name = $("#inputName").val();
 		if (!input){
 			return alert("Please submit a number.");
 		}
 		else {
 			var output = checkThree(input);
+			var dave = output.includes("Dave");
+			if (dave) {
+				if (dave && name) {
+					output = output.replace("Dave", name);
+				}
+				shake();
+			}
 			$(".result").text(output);
 			$("input").val("");
 		}

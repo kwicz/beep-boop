@@ -24,6 +24,7 @@ _This fun little web application is designed to accept a number from a user (x) 
 |Return "beep" when user inputs a number containing "1"|"10"|"beep"|
 |Return "boop" when user inputs a number containing "2", even if the number contains "1"|"120"|"boop"|
 |Return "I'm sorry Dave, I'm afraid I can't do that." when user inputs a number containing "3", even if the number contains "1" or "2"|"1230"|"I'm sorry Dave, I'm afraid I can't do that."|
+|Return customized output when user inputs name and number with 3|{name}, 33|"I'm sorry {name}, I'm afraid I can't do that."
 
 
 ## Setup/Installation Requirements

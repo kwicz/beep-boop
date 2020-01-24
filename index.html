@@ -23,14 +23,20 @@
 	          <div class="card-body">
 	            <h5 class="card-title text-center">Feed Me a Number, Human</h5>
 	            <form class="form-signin">
+	            	<div class="form-label-group">
+	                <input type="text" id="inputName" class="form-control" placeholder="name" required autofocus>
+	                <label for="inputName">Name</label>
+	              </div>
 	              <div class="form-label-group">
 	                <input type="number" id="inputNumber" class="form-control" placeholder="number" required autofocus>
-	                <label for="inputNumber">Number</label>
+	                <label for="inputNumber">Any Number</label>
 	              </div>
 	              <button class="btn btn-lg btn-secondary btn-block text-uppercase" type="submit">Submit</button>
 	            </form>
-	            <img src="img/hal.jpeg">
-	            <div class="result"></div>
+	            <img src="img/hal.jpeg" id="shake">
+	            <div>
+	            	<h5 class="result"></h5>
+	            </div>
 	          </div>
 	        </div>
 	      </div>

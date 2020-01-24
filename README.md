@@ -1,6 +1,6 @@
-# _{Application Name}_
+# _Beep Boop_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Creates a new string of words, based on user input, Jan 2020_
 
 #### By _**K. Wicz**_
 
@@ -9,29 +9,34 @@
 
 [![Landing Page Preview](url-for-img)]
 
-**[View Live Preview](https://kwicz.github.io/{this-repo}/)**
+**[View Live Preview](https://kwicz.github.io/{beep-boop/)**
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This fun little web application is designed to accept a number from a user (x) and then return a range of numbers from 0 - x. However, if a user inputs a number containing "1", "2", or "3", the output will instead be "beep", "boop", or "I'm sorry Dave, I can't do that", respectively._
 
 ## Project Specifications
 
 | Behavior | Input | Output |
-|---|---|---|
-|   |   |   |
-|   |   |   |
-|   |   |   |
+|---|:---:|:---:|
+|User submits empty string|""|Error message|
+|Return a range of numbers from 0 to the user's numerical input| "4"|"0, 1, 2, 3, 4"|
+|Return "beep" when user inputs a number containing "1"|"10"|"beep"|
+|Return "boop" when user inputs a number containing "2", even if the number contains "1"|"120"|"boop"|
+|Return "I'm sorry Dave, I'm afraid I can't do that." when user inputs a number containing "3", even if the number contains "1" or "2"|"1230"|"I'm sorry Dave, I'm afraid I can't do that."|
+
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+_In Terminal_
+* _Navigate to where you want this application to be saved, i.e.:_
+```cd desktop```
+* _Clone the file from GitHub with HTTPS_
+```git clone https://github.com/kwicz/beep-boop.git```
+* _Open file in your preferred text editor_
+* _On Mac: ```open -a {your text editor} beep-boop```
+* _On Windows: ```beep-boop```_
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
 
 ## Known Bugs
 
@@ -39,11 +44,13 @@ _No known bugs at this time._
 
 ## Support and contact details
 
-_Have a bug or an issue with this application? [Open a new issue](https://github.com/kwicz/{repo-name}/issues) here on GitHub._
+_Have a bug or an issue with this application? [Open a new issue](https://github.com/kwicz/beep-boop/issues) here on GitHub._
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+* _HTML & CSS_
+* _Javascript & jQuery_
+* _Bootstrap 3.3.7_
 
 ### License
 

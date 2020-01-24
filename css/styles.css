@@ -7,6 +7,10 @@ body {
   background: url(../img/background.jpeg);
 }
 
+h5 {
+	text-shadow: 1px 1px #66ff66;
+}
+
 .card {
   border: 0;
   border-radius: 1rem;

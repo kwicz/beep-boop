@@ -1,4 +1,17 @@
 // Business at the top
+
+function checkOne(number){
+	if (number.includes(1)){
+		output = "beep";
+		return output
+	}
+	else {
+		output = extract(number);
+		return output;
+	}
+}
+
+
 function extract(number){
 	var range = [];
 	for (var i = 0; i < number; i++){
@@ -17,7 +30,7 @@ $(document).ready(function(){
 			return alert("Please submit a number.");
 		}
 		else {
-			var output = extract(input);
+			var output = checkOne(input);
 			console.log("output: " + output);
 		}
 	});

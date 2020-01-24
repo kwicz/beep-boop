@@ -3,7 +3,7 @@
 // Check user input for "3"
 function checkThree(number){
 	if (number.includes(3)){
-		output = "sorry";
+		output = "I'm sorry Dave, I'm afraid can't do that.";
 		return output;
 	}
 	else {
@@ -49,13 +49,14 @@ function extract(number){
 // UI at the bottom
 $(document).ready(function(){
 	$("form").submit(function(event){
+		event.preventDefault();
 		var input = $("input").val();
 		if (!input){
 			return alert("Please submit a number.");
 		}
 		else {
 			var output = checkThree(input);
-			$(".result").addClass("sorry");
+			$(".result").text(output);
 			console.log("output: " + output);
 		}
 	});

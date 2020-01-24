@@ -1,9 +1,20 @@
 // Business at the top
 
+function checkTwo(number){
+	if (number.includes(2)){
+		output = "boop";
+		return output;
+	}
+	else {
+		output = checkOne(number);
+		return output;
+	}
+}
+
 function checkOne(number){
 	if (number.includes(1)){
 		output = "beep";
-		return output
+		return output;
 	}
 	else {
 		output = extract(number);
@@ -30,7 +41,7 @@ $(document).ready(function(){
 			return alert("Please submit a number.");
 		}
 		else {
-			var output = checkOne(input);
+			var output = checkTwo(input);
 			console.log("output: " + output);
 		}
 	});

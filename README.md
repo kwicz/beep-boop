@@ -62,6 +62,7 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 * HTML & CSS
 * Javascript & jQuery
 * Bootstrap 4
+* Google Fonts
 
 ### License
 

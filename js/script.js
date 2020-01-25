@@ -1,5 +1,16 @@
 // Business at the top
 
+// Output range of number from 0 until the user's input
+function extract(number){
+	var range = [];
+	for (var i = 0; i <= number; i++){
+		var i = i.toString();
+		var item = checkThree(i);
+		range.push(item);
+	};
+	return range;
+};
+
 // Check user input for "3"
 function checkThree(number){
 	if (number.includes(3)){
@@ -32,17 +43,6 @@ function checkOne(number){
 		output = number;
 		return output;
 	};
-};
-
-// Output range of number from 0 until the user's input
-function extract(number){
-	var range = [];
-	for (var i = 0; i <= number; i++){
-		var i = i.toString();
-		var item = checkThree(i);
-		range.push(item);
-	};
-	return range;
 };
 
 // Animate Hal

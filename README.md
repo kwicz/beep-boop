@@ -1,6 +1,6 @@
 # _Beep Boop_
 
-#### _Creates a new string of numbers or words based on user input, Jan 2020_
+#### _Creates a new string of numbers and/or words based on user input, Jan 2020_
 
 #### By _**K. Wicz**_
 
@@ -29,14 +29,24 @@ _This fun little web application is designed to accept a number from a user (x) 
 
 ## Setup/Installation Requirements
 
-_In Terminal_
-* _Navigate to where you want this application to be saved, i.e.:_
+In Terminal:
+
+* Navigate to where you want this application to be saved, i.e.:
 ```cd desktop```
-* _Clone the file from GitHub with HTTPS_
+* Clone the file from GitHub with HTTPS
 ```git clone https://github.com/kwicz/beep-boop.git```
-* _Open file in your preferred text editor_
+* Open file in your preferred text editor
 * On Mac: ```open -a {your text editor} beep-boop```
-* _On Windows: ```beep-boop```_
+* On Windows: ```beep-boop```
+
+To Download Manually:
+
+* Navigate to https://github.com/kwicz/beep-boop.
+* Click green "Clone or Download" button.
+* Click "Download ZIP".
+* Click downloaded file to unzip.
+* Open folder called "beep-boop-master".
+* Right click "index.html" and select your preferred browser or text editor.
 
 
 ## Known Bugs
@@ -49,9 +59,9 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 
 ## Technologies Used
 
-* _HTML & CSS_
-* _Javascript & jQuery_
-* _Bootstrap 4_
+* HTML & CSS
+* Javascript & jQuery
+* Bootstrap 4
 
 ### License
 

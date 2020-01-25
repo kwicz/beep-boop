@@ -11,6 +11,11 @@ h5 {
 	text-shadow: 1px 1px #66ff66;
 }
 
+.result{
+	height: 150px;
+	overflow: scroll;
+}
+
 .card {
   border: 0;
   border-radius: 1rem;

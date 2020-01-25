@@ -35,7 +35,7 @@ _In Terminal_
 * _Clone the file from GitHub with HTTPS_
 ```git clone https://github.com/kwicz/beep-boop.git```
 * _Open file in your preferred text editor_
-* _On Mac: ```open -a {your text editor} beep-boop```
+* On Mac: ```open -a {your text editor} beep-boop```
 * _On Windows: ```beep-boop```_
 
 

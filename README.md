@@ -51,7 +51,7 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 
 * _HTML & CSS_
 * _Javascript & jQuery_
-* _Bootstrap 3.3.7_
+* _Bootstrap 4_
 
 ### License
 
